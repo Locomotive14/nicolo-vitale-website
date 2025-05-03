@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     sec.style.transform = 'translateY(20px)';
   });
 
+  // Transizione morbida all'apertura del sito
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.style.opacity = 1; // Rende visibile il corpo con transizione
+});
+
   const fadeIn = () => {
     document.querySelectorAll('section').forEach(sec => {
       const rect = sec.getBoundingClientRect();

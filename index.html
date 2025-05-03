@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicolò Vitale - Chitarrista</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolò Vitale - Chitarrista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 <body>
-  <header>
+  <!-- Barra di navigazione -->
+  <nav id="navbar" class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#video">Performances</a></li>
+      <li><a href="#video">Music/Video</a></li>
+      <li><a href="#biografia">Biography</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#lezioni">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
     <h1>Nicolò Vitale</h1>
     <p>Chitarrista · Compositore · Insegnante</p>
     <a href="#lezioni" class="btn">Prenota una lezione</a>
-  </header>
 
+ 
+    
   <section id="biografia">
-    <h2>Chi sono</h2>
-    <p>Nicolò Vitale è un musicista, chitarrista, compositore e insegnante nato ad Alcamo il 14 agosto 1996. [...]</p>
+    <h2>BIOGRAFIA</h2>
+    <p>Nicolò Vitale è un musicista, chitarrista, compositore e insegnante nato ad Alcamo il 14 agosto 1996. Si è laureato con lode nel marzo 2023 al Conservatorio di Musica “A. Scontrino” di Trapani.
+      Nel corso della sua formazione, ha avuto l’opportunità di studiare con alcuni dei più prestigiosi maestri, tra cui Francesco Buzzurro, Francesco Guaiana, Fabrizio Brusca, Fabio Mariani, Fabrizio Puglisi, Lauro Rossi, Simone Veccia, Mauro Schiavone, Silvio Zalambani, Gaspare Palazzolo, Paolo Passalacqua, Giovanni Perin e Vincenzo Abbracciante.
+      Nel settembre 2021 si trasferisce a Groningen, nei Paesi Bassi, per intraprendere il percorso di Master of Music in New York Jazz presso il Prins Claus Conservatorium. Qui ha studiato e suonato con artisti di fama internazionale come Frank Wingold, Winfred Buma, Michael Moore, Kurt Weiss, Steve Altenberg, Conrad Herwig, Howard Curtis, Efraim Trujillo, Dado Moroni, Joris Teepe, JD Walter, Jesse Davis, Freddie Bryant, Danny Grissett, Steve Nelson, Mike Mossman, Paul Bollenback, Don Braden, Leo Genovese, Freddie Hendrix, Philip Harper, David Berkman, Janis Siegel e Adam Nussbaum.
+      Tra i momenti salienti della sua carriera, ricordiamo la partecipazione allo “Swinging Groningen 25th Edition” (giugno 2022), dove si esibisce in quartetto con Giulio Jesi, Aistis Kondratas e Ruggero di Luisi presso il Café de Zolder. Nel febbraio 2020, Nicolò prende parte a una masterclass con il leggendario Ron Carter al Real Teatro Santa Cecilia, School of Music – Foundation “The Brass Group”.
+      Nel novembre 2019 prende parte alla masterclass della Instant Composers Pool (ICP) Orchestra, collaborando con artisti del calibro di Han Bennink, Ab Baars, Tobias Delius, Ernst Glerum, Thomas Herberer, Tristan Honsinger, Michael Moore e Wolter Wierbos. Nel 2019, inoltre, si esibisce al Trapani International Jazz Day con un arrangiamento di “Blues for Barry” di Bill Dobbins.</p>
+  </section>
+
+  <section id="highlights">
+    <h2>HIGHLIGHTS</h2>
+    <p>Scopri i momenti più importanti della mia carriera musicale e le collaborazioni con artisti di fama internazionale.</p>
+    <div class="highlights-grid">
+      <div class="highlight-item">
+        <h3>Collaborazioni</h3>
+        <p>Ho lavorato con artisti come Ron Carter, Han Bennink e molti altri.</p>
+      </div>
+      <div class="highlight-item">
+        <h3>Eventi</h3>
+        <p>Partecipazione a Swinging Groningen e Trapani International Jazz Day.</p>
+      </div>
+      <div class="highlight-item">
+        <h3>Masterclass</h3>
+        <p>Esperienze formative con maestri di fama mondiale.</p>
+      </div>
+    </div>
   </section>
 
   <section id="video">
-    <h2>Video e Performance</h2>
+    <h2>VIDEO & PERFORMANCES</h2>
     <div class="video-grid">
       <iframe src="https://www.youtube.com/embed/ysRTZzXdbg4" frameborder="0" allowfullscreen></iframe>
       <iframe src="https://www.youtube.com/embed/TBqCr_scT4U" frameborder="0" allowfullscreen></iframe>
@@ -27,8 +65,27 @@
     </div>
   </section>
 
+  <section id="gallery">
+    <h2>GALLERY</h2>
+    <p>Esplora alcuni momenti salienti della mia carriera attraverso immagini e ricordi.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/gallery1.jpg" alt="Performance live" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery2.jpg" alt="Collaborazione con artisti" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery3.jpg" alt="Evento musicale" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery4.jpg" alt="Masterclass" />
+      </div>
+    </div>
+  </section>
+
   <section id="lezioni">
-    <h2>Lezioni di Chitarra Moderna</h2>
+    <h2>LEZIONI DI CHITARRA MODERNA</h2>
     <p>Offro lezioni personalizzate online o in presenza, per tutti i livelli. Focus su tecnica, improvvisazione, armonia e repertorio jazz/moderno.</p>
     <form action="https://formspree.io/f/your-id" method="POST">
       <input type="text" name="name" placeholder="Nome" required />
@@ -40,8 +97,11 @@
 
   <footer>
     <p>Contatti: <a href="mailto:nicolo.vitale.nv@gmail.com">nicolo.vitale.nv@gmail.com</a></p>
-    <p><a href="https://linktr.ee/nic_vit14" target="_blank">I miei social</a></p>
     <p>© 2025 Nicolò Vitale</p>
+    <div class="social-slot">
+      <h3>SOCIALNETWORKS</h3>
+      <a href="https://linktr.ee/nic_vit14" target="_blank">Visita i miei social</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
